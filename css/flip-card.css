@@ -1,0 +1,191 @@
+.flip-card {
+  margin-bottom: 16px;
+  perspective: 1200px;
+}
+
+.flip-card:last-child {
+  margin-bottom: 0;
+}
+
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  border-radius: 16px;
+  color: #ffffff;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-front {
+  position: relative;
+  padding: 24px 28px;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card-indigo {
+  background-color: #3730a3;
+}
+
+.card-rose {
+  background-color: #be123c;
+}
+
+.card-blue {
+  background-color: #1e40af;
+}
+
+.primary-badge {
+  position: absolute;
+  top: 28px;
+  left: 76px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.14);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chip span {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-logo {
+  width: 36px;
+  height: 36px;
+}
+
+.card-number {
+  margin-bottom: 12px;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.card-paypal {
+  font-family: inherit;
+  letter-spacing: 0;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-label {
+  font-size: 12px;
+  color: #dbeafe;
+}
+
+.card-value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-verified {
+  color: #4ade80;
+}
+
+.flip-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+  background: linear-gradient(120deg, #051026, #0b1220 45%, #0f1724);
+  transform: rotateY(180deg);
+}
+
+.mag-stripe {
+  height: 40px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #000000, #111111 40%, #2b2b2b);
+}
+
+.microprint {
+  margin-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 6px 8px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #f8fafc, #eef2f6);
+}
+
+.scribble {
+  width: 86%;
+  height: 12px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.06));
+  transform: skew(-10deg);
+}
+
+.last-digits {
+  margin-right: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #111827;
+}
+
+.cvv-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.cvv-label {
+  font-size: 12px;
+  color: #d1d5db;
+}
+
+.cvv-box {
+  min-width: 48px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #111827;
+}

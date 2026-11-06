@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
+  font-weight: 600;
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.text-blue {
+  color: #2563eb;
+}
+
+.text-green {
+  color: #16a34a;
+}
+
+.text-red {
+  color: #dc2626;
+}
+
+.text-orange {
+  color: #f97316;
+}
+
+.text-gray {
+  color: #6b7280;
+}
+
+.bg-blue {
+  background-color: #dbeafe;
+}
+
+.bg-green {
+  background-color: #dcfce7;
+}
+
+.bg-orange {
+  background-color: #ffedd5;
+}
+
+.bg-red {
+  background-color: #fee2e2;
+}
+
+.bg-purple {
+  background-color: #f3e8ff;
+}
+
+.bg-yellow {
+  background-color: #fef9c3;
+}
+
+.bg-indigo {
+  background-color: #e0e7ff;
+}
+
+.bg-cyan {
+  background-color: #cffafe;
+}
+
+.bg-emerald {
+  background-color: #d1fae5;
+}
+
+.bg-pink {
+  background-color: #fce7f3;
+}
